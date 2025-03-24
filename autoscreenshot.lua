@@ -1,5 +1,7 @@
 --| Module creator: Discord: @pogofcz | GitHub: @pogof 
 --|
+--| https://github.com/pogof/SimplyLove-Assorted-Modules
+--|
 --| To use this drop this file into Simply Love/Modules folder. It can also be Z-Mod or
 --| any other theme that is Simply Love based (And for ITGmania!).
 --| 
