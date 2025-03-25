@@ -8,6 +8,9 @@
 --| This module will take a screenshot of the results screen if you get a personal record (ITG).
 --| It can be either player one or player two. It does not support course mode.
 --| 
+--| Due to animation delays the screenshot will be taken 3 seconds after you arrive at the evaluation screen.
+--| This is to ensure that you are not taking a screenshot of black screen or text over the eval screen.
+
 --| You can find the screenshots in %appdata%/itgmania/Screenshots 
 --| You can specify the subfolder path in the prefix below.
 --|
@@ -28,7 +31,7 @@ local player = nil
 u["ScreenEvaluationStage"] = Def.Actor {
     ModuleCommand = function(self)
 
-        self:sleep(2):queuecommand("GetScore")
+        self:sleep(3):queuecommand("GetScore")
 
     end,
 
